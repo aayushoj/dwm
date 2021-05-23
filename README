@@ -46,3 +46,10 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+Patches
+------------
+Following patches were applied on top of dwm 6.2
+# dwm-dwmblocks-6.2.diff
+# dwm-fullgaps-6.2.diff
+# dwm-systray-6.2.diff
