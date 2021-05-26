@@ -49,7 +49,9 @@ and (re)compiling the source code.
 
 Patches
 ------------
-Following patches were applied on top of dwm 6.2
+Following patches are applied on top of dwm 6.2
 # dwm-dwmblocks-6.2.diff
 # dwm-fullgaps-6.2.diff
 # dwm-systray-6.2.diff
+# dwm-hide_vacant_tags-6.2.diff
+# dwm-scratchpad-6.2.diff
