@@ -98,6 +98,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *downBrightness[] = {"xbacklight", "-dec", "5", NULL};
 static const char *upBrightness[] = {"xbacklight", "-inc", "5", NULL};
 static const char *passmenucmd[] = { "passmenu", "-l", "10", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *emojidmenucmd[] = {"/home/aayush/.local/bin/dmenuunicode", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -107,6 +108,7 @@ static Key keys[] = {
     { 0,                       XF86XK_MonBrightnessDown, spawn, {.v = downBrightness } },
     { 0,                       XF86XK_MonBrightnessUp, spawn, {.v = upBrightness } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_e,      spawn,          {.v = emojidmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
